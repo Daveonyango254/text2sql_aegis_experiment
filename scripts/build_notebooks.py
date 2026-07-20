@@ -108,7 +108,10 @@ why this value was chosen, and how changing it moves accuracy/cost.""")
                   run_name=name)
     lines = ["# Parameters (papermill overrides land here)"]
     for k, v in params.items():
-        lines.append(f"{k} = {json.dumps(v)}")
+        # repr() emits valid Python literals (True/False/None, quoted strings);
+        # json.dumps() would emit JSON's true/false/null, which are NameErrors
+        # when the parameters cell is executed.
+        lines.append(f"{k} = {repr(v)}")
     code("\n".join(lines), tags=["parameters"])
 
     code('''# 1) Environment ----------------------------------------------------------
