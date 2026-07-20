@@ -1,0 +1,13 @@
+# papermill -f config for notebooks/llama31_aegis.ipynb — flat key:value overrides
+model_id: meta-llama/Llama-3.1-8B-Instruct
+hub_repo: Daveonyango254/Llama31-8B-Aegis-Text2SQL
+learning_rate: 0.0001
+lora_r: 32
+lora_alpha: 64
+per_device_bs: 2
+grad_accum: 8
+epochs: 3
+max_seq_len: 4096
+push_to_hub: true
+merge_adapter: false
+resume: true

@@ -1,0 +1,3017 @@
+{
+ "n": 500,
+ "seed": 42,
+ "per_db_cap": 12,
+ "bucket_counts": {
+  "multi_join": 100,
+  "set_op": 50,
+  "single_join": 60,
+  "having": 70,
+  "group_by": 80,
+  "nested": 90,
+  "single_table_analytic": 50
+ },
+ "distinct_dbs": 131,
+ "records": [
+  {
+   "i": 0,
+   "db_id": "college_3",
+   "bucket": "multi_join",
+   "question": "Find the student first and last names and grade points of all enrollments ."
+  },
+  {
+   "i": 1,
+   "db_id": "tracking_orders",
+   "bucket": "set_op",
+   "question": "Find the names of the customers who have order status both ' On Road ' and ' Shipped ' ."
+  },
+  {
+   "i": 2,
+   "db_id": "chinook_1",
+   "bucket": "single_join",
+   "question": "Find the first names of all customers that live in Brazil and have an invoice ."
+  },
+  {
+   "i": 3,
+   "db_id": "riding_club",
+   "bucket": "multi_join",
+   "question": "Show the names of players and names of their coaches ."
+  },
+  {
+   "i": 4,
+   "db_id": "tracking_orders",
+   "bucket": "having",
+   "question": "List the names of customers who have once Cancel the purchase of the product ' food ' ( the item status is ' Cancel ' ) ."
+  },
+  {
+   "i": 5,
+   "db_id": "train_station",
+   "bucket": "group_by",
+   "question": "Show all locations and the total number of platforms and passengers for all train stations in each location ."
+  },
+  {
+   "i": 6,
+   "db_id": "customers_and_addresses",
+   "bucket": "multi_join",
+   "question": "What is the address content of the customer named ' Maudie Kertzmann ' ?"
+  },
+  {
+   "i": 7,
+   "db_id": "college_1",
+   "bucket": "multi_join",
+   "question": "What is the last name and office of the professor from the History department ?"
+  },
+  {
+   "i": 8,
+   "db_id": "college_2",
+   "bucket": "nested",
+   "question": "Find the names of all instructors whose salary is greater than the salary of all instructors in the Biology department ."
+  },
+  {
+   "i": 9,
+   "db_id": "news_report",
+   "bucket": "multi_join",
+   "question": "Show the names of journalists and the number of events they reported ."
+  },
+  {
+   "i": 10,
+   "db_id": "scientist_1",
+   "bucket": "multi_join",
+   "question": "Find the name of the project for which a scientist whose name contains ' Smith ' is assigned to ."
+  },
+  {
+   "i": 11,
+   "db_id": "tracking_share_transactions",
+   "bucket": "multi_join",
+   "question": "What are the lot details of lots associated with transactions with share count smaller than 50 ?"
+  },
+  {
+   "i": 12,
+   "db_id": "soccer_2",
+   "bucket": "nested",
+   "question": "What is the number of states that has some college whose enrollment is larger than the average enrollment ?"
+  },
+  {
+   "i": 13,
+   "db_id": "loan_1",
+   "bucket": "set_op",
+   "question": "Find the name of customers who do not have a loan with a type of Mortgages ."
+  },
+  {
+   "i": 14,
+   "db_id": "loan_1",
+   "bucket": "group_by",
+   "question": "Find the state which has the most number of customers ."
+  },
+  {
+   "i": 15,
+   "db_id": "farm",
+   "bucket": "single_table_analytic",
+   "question": "What are the themes of farm competitions sorted by year in ascending order ?"
+  },
+  {
+   "i": 16,
+   "db_id": "epinions_1",
+   "bucket": "nested",
+   "question": "Find the number of items that did not receive any review ."
+  },
+  {
+   "i": 17,
+   "db_id": "browser_web",
+   "bucket": "multi_join",
+   "question": "When did the web accelerator ' CACHEbox ' and browser ' Internet Explorer ' become compatible ?"
+  },
+  {
+   "i": 18,
+   "db_id": "device",
+   "bucket": "nested",
+   "question": "List the names of shops that have no devices in stock ."
+  },
+  {
+   "i": 19,
+   "db_id": "loan_1",
+   "bucket": "having",
+   "question": "Find the name of customers who have more than one loan ."
+  },
+  {
+   "i": 20,
+   "db_id": "medicine_enzyme_interaction",
+   "bucket": "group_by",
+   "question": "What is the most common interaction type between enzymes and medicine ? And how many are there ?"
+  },
+  {
+   "i": 21,
+   "db_id": "journal_committee",
+   "bucket": "set_op",
+   "question": "List the date , theme and sales of the journal which did not have any of the listed editors serving on committee ."
+  },
+  {
+   "i": 22,
+   "db_id": "flight_4",
+   "bucket": "having",
+   "question": "List the cities which have more than 2 airports sorted by the number of airports ."
+  },
+  {
+   "i": 23,
+   "db_id": "tracking_grants_for_research",
+   "bucket": "multi_join",
+   "question": "List the project details of the projects with the research outcome described with the substring ' Published ' ."
+  },
+  {
+   "i": 24,
+   "db_id": "club_1",
+   "bucket": "multi_join",
+   "question": "Which club has the most members majoring in ' 600 ' ?"
+  },
+  {
+   "i": 25,
+   "db_id": "tracking_grants_for_research",
+   "bucket": "nested",
+   "question": "List the project details of the projects launched by the organisation"
+  },
+  {
+   "i": 26,
+   "db_id": "race_track",
+   "bucket": "nested",
+   "question": "Show all track names that have had no races ."
+  },
+  {
+   "i": 27,
+   "db_id": "icfp_1",
+   "bucket": "multi_join",
+   "question": "Which institution does ' Katsuhiro Ueno ' belong to ?"
+  },
+  {
+   "i": 28,
+   "db_id": "customer_complaints",
+   "bucket": "nested",
+   "question": "Find the email and phone number of the customers who have never filed a complaint before ."
+  },
+  {
+   "i": 29,
+   "db_id": "protein_institute",
+   "bucket": "single_table_analytic",
+   "question": "Show the name , street address , and number of floors for all buildings ordered by the number of floors ."
+  },
+  {
+   "i": 30,
+   "db_id": "college_1",
+   "bucket": "multi_join",
+   "question": "What is the first name of students enrolled in class ACCT-211 and got grade C ?"
+  },
+  {
+   "i": 31,
+   "db_id": "music_2",
+   "bucket": "multi_join",
+   "question": "Who is performing in the back stage position for the song ' Der Kapitan ' ? Show the first name and last name ."
+  },
+  {
+   "i": 32,
+   "db_id": "sports_competition",
+   "bucket": "single_table_analytic",
+   "question": "List all club names in descending alphabetical order ."
+  },
+  {
+   "i": 33,
+   "db_id": "manufactory_1",
+   "bucket": "group_by",
+   "question": "Find the name and revenue of the company that earns the highest revenue in each city ."
+  },
+  {
+   "i": 34,
+   "db_id": "customers_and_invoices",
+   "bucket": "having",
+   "question": "What is the order id and order details for the order more than two invoices ."
+  },
+  {
+   "i": 35,
+   "db_id": "store_product",
+   "bucket": "nested",
+   "question": "Find all the stores in the district with the most population ."
+  },
+  {
+   "i": 36,
+   "db_id": "music_2",
+   "bucket": "multi_join",
+   "question": "Hom many musicians performed in the song ' Flash ' ?"
+  },
+  {
+   "i": 37,
+   "db_id": "company_office",
+   "bucket": "multi_join",
+   "question": "Show the name of the building that has the most company offices ."
+  },
+  {
+   "i": 38,
+   "db_id": "phone_market",
+   "bucket": "group_by",
+   "question": "Show the most frequently used carrier of the phones ."
+  },
+  {
+   "i": 39,
+   "db_id": "baseball_1",
+   "bucket": "single_join",
+   "question": "What is average salary of the players in the team named ' Boston Red Stockings ' ?"
+  },
+  {
+   "i": 40,
+   "db_id": "cinema",
+   "bucket": "multi_join",
+   "question": "Show cinema name , film title , date , and price for each record in schedule ."
+  },
+  {
+   "i": 41,
+   "db_id": "club_1",
+   "bucket": "multi_join",
+   "question": "Find all the female members of club ' Bootup Baltimore ' . Show the first name and last name ."
+  },
+  {
+   "i": 42,
+   "db_id": "game_1",
+   "bucket": "having",
+   "question": "Show all student IDs with more than total 10 hours per week on all sports played ."
+  },
+  {
+   "i": 43,
+   "db_id": "coffee_shop",
+   "bucket": "having",
+   "question": "Which months have more than 2 happy hours ?"
+  },
+  {
+   "i": 44,
+   "db_id": "department_store",
+   "bucket": "set_op",
+   "question": "Find the name and address of the customers who have both New and Pending orders ."
+  },
+  {
+   "i": 45,
+   "db_id": "flight_1",
+   "bucket": "single_table_analytic",
+   "question": "Show the id and name of the employee with maximum salary ."
+  },
+  {
+   "i": 46,
+   "db_id": "city_record",
+   "bucket": "set_op",
+   "question": "Give me a list of cities whose temperature in Mar is lower than that in July and which have also served as host cities ?"
+  },
+  {
+   "i": 47,
+   "db_id": "behavior_monitoring",
+   "bucket": "single_table_analytic",
+   "question": "How many distinct students have been in detention ?"
+  },
+  {
+   "i": 48,
+   "db_id": "e_learning",
+   "bucket": "group_by",
+   "question": "What is the name of the course that has the most student enrollment ?"
+  },
+  {
+   "i": 49,
+   "db_id": "performance_attendance",
+   "bucket": "multi_join",
+   "question": "Show the names of members and the location of performances they attended in ascending alphabetical order of their names ."
+  },
+  {
+   "i": 50,
+   "db_id": "gas_company",
+   "bucket": "multi_join",
+   "question": "find the location and Representative name of the gas stations owned by the companies with top 3 Asset amounts ."
+  },
+  {
+   "i": 51,
+   "db_id": "activity_1",
+   "bucket": "group_by",
+   "question": "Which building has most faculty members ?"
+  },
+  {
+   "i": 52,
+   "db_id": "party_people",
+   "bucket": "nested",
+   "question": "Show names of parties that does not have any members ."
+  },
+  {
+   "i": 53,
+   "db_id": "perpetrator",
+   "bucket": "single_join",
+   "question": "Show the date of the tallest perpetrator ."
+  },
+  {
+   "i": 54,
+   "db_id": "music_1",
+   "bucket": "group_by",
+   "question": "Find the names and number of works of the three artists who have produced the most songs ."
+  },
+  {
+   "i": 55,
+   "db_id": "cre_Docs_and_Epenses",
+   "bucket": "group_by",
+   "question": "What is the id of the project with least number of documents ?"
+  },
+  {
+   "i": 56,
+   "db_id": "department_store",
+   "bucket": "having",
+   "question": "Find the id of suppliers whose average amount purchased for each product is above 50000 or below 30000 ."
+  },
+  {
+   "i": 57,
+   "db_id": "storm_record",
+   "bucket": "multi_join",
+   "question": "What are the region names affected by the storm with a number of deaths of least 10 ?"
+  },
+  {
+   "i": 58,
+   "db_id": "performance_attendance",
+   "bucket": "having",
+   "question": "Show the locations that have at least two performances ."
+  },
+  {
+   "i": 59,
+   "db_id": "e_learning",
+   "bucket": "having",
+   "question": "Find the student ID and middle name for all the students with at most two enrollments ."
+  },
+  {
+   "i": 60,
+   "db_id": "soccer_2",
+   "bucket": "nested",
+   "question": "What is the total number of enrollment of schools that do not have any goalie player ?"
+  },
+  {
+   "i": 61,
+   "db_id": "entrepreneur",
+   "bucket": "single_join",
+   "question": "Show the company of the tallest entrepreneur ."
+  },
+  {
+   "i": 62,
+   "db_id": "student_1",
+   "bucket": "group_by",
+   "question": "Find the number of students in one classroom ."
+  },
+  {
+   "i": 63,
+   "db_id": "company_employee",
+   "bucket": "set_op",
+   "question": "Show the headquarters that have both companies in Banking industry and companies in Oil and gas industry ."
+  },
+  {
+   "i": 64,
+   "db_id": "cre_Doc_Tracking_DB",
+   "bucket": "multi_join",
+   "question": "What are the names of the employees who authorised the destruction and the employees who destroyed the corresponding documents ?"
+  },
+  {
+   "i": 65,
+   "db_id": "perpetrator",
+   "bucket": "nested",
+   "question": "List the names of people that are not perpetrators ."
+  },
+  {
+   "i": 66,
+   "db_id": "store_1",
+   "bucket": "group_by",
+   "question": "Find number of tracks in each genre ?"
+  },
+  {
+   "i": 67,
+   "db_id": "workshop_paper",
+   "bucket": "nested",
+   "question": "List the authors who do not have submission to any workshop ."
+  },
+  {
+   "i": 68,
+   "db_id": "sports_competition",
+   "bucket": "having",
+   "question": "List the position of players with average number of points scored by players of that position bigger than 20 ."
+  },
+  {
+   "i": 69,
+   "db_id": "icfp_1",
+   "bucket": "multi_join",
+   "question": "Find the first and last name of the author ( s ) who wrote the paper ' Nameless, Painless ' ."
+  },
+  {
+   "i": 70,
+   "db_id": "college_2",
+   "bucket": "nested",
+   "question": "What is the name and building of the departments whose budget is more than the average budget ?"
+  },
+  {
+   "i": 71,
+   "db_id": "school_player",
+   "bucket": "single_table_analytic",
+   "question": "List the teams of the players with the top 5 largest ages ."
+  },
+  {
+   "i": 72,
+   "db_id": "e_learning",
+   "bucket": "single_table_analytic",
+   "question": "How many students have personal names that contain the word ' son ' ?"
+  },
+  {
+   "i": 73,
+   "db_id": "allergy_1",
+   "bucket": "nested",
+   "question": "Find the number of male ( sex is ' M ' ) students who have some food type allery ."
+  },
+  {
+   "i": 74,
+   "db_id": "railway",
+   "bucket": "having",
+   "question": "Show the locations that have more than one railways ."
+  },
+  {
+   "i": 75,
+   "db_id": "apartment_rentals",
+   "bucket": "single_table_analytic",
+   "question": "What is the average number of rooms of apartments with type code ' Studio ' ?"
+  },
+  {
+   "i": 76,
+   "db_id": "local_govt_mdm",
+   "bucket": "group_by",
+   "question": "How many business rates are related to each cmi cross reference ? List cross reference id , master customer id and the n"
+  },
+  {
+   "i": 77,
+   "db_id": "baseball_1",
+   "bucket": "multi_join",
+   "question": "What is the average height of the players from the college named ' Yale University ' ?"
+  },
+  {
+   "i": 78,
+   "db_id": "movie_1",
+   "bucket": "having",
+   "question": "Find the average rating star for each movie that received at least 2 ratings ."
+  },
+  {
+   "i": 79,
+   "db_id": "cre_Theme_park",
+   "bucket": "single_table_analytic",
+   "question": "Show the details of the top 3 most expensive hotels ."
+  },
+  {
+   "i": 80,
+   "db_id": "csu_1",
+   "bucket": "single_join",
+   "question": "What is the campus fee of ' San Francisco State University ' in year 2000 ?"
+  },
+  {
+   "i": 81,
+   "db_id": "browser_web",
+   "bucket": "single_table_analytic",
+   "question": "How many main stream browsers whose market share is at least 5 exist ?"
+  },
+  {
+   "i": 82,
+   "db_id": "company_1",
+   "bucket": "single_table_analytic",
+   "question": "how many female dependents are there ?"
+  },
+  {
+   "i": 83,
+   "db_id": "aircraft",
+   "bucket": "single_table_analytic",
+   "question": "Show all information on the airport that has the largest number of international passengers ."
+  },
+  {
+   "i": 84,
+   "db_id": "theme_gallery",
+   "bucket": "having",
+   "question": "Show all artist names with an average exhibition attendance over 200 ."
+  },
+  {
+   "i": 85,
+   "db_id": "game_injury",
+   "bucket": "single_table_analytic",
+   "question": "What are the maximum , minimum and average home games each stadium held ?"
+  },
+  {
+   "i": 86,
+   "db_id": "debate",
+   "bucket": "group_by",
+   "question": "Show the names of people and the number of times they have been on the affirmative side of debates ."
+  },
+  {
+   "i": 87,
+   "db_id": "university_basketball",
+   "bucket": "single_table_analytic",
+   "question": "What is the maximum enrollment across all schools ?"
+  },
+  {
+   "i": 88,
+   "db_id": "products_for_hire",
+   "bucket": "single_join",
+   "question": "What is the product description of the product booked with an amount of 102.76 ?"
+  },
+  {
+   "i": 89,
+   "db_id": "music_1",
+   "bucket": "nested",
+   "question": "What are the names of the songs whose rating is below the rating of all songs in english ?"
+  },
+  {
+   "i": 90,
+   "db_id": "aircraft",
+   "bucket": "set_op",
+   "question": "Show the names of aircrafts that are associated with both an airport named ' London Heathrow ' and an airport named ' London Gatwick '"
+  },
+  {
+   "i": 91,
+   "db_id": "music_1",
+   "bucket": "nested",
+   "question": "What are the names of all songs that have a lower rating than some song of blues genre ?"
+  },
+  {
+   "i": 92,
+   "db_id": "company_1",
+   "bucket": "single_table_analytic",
+   "question": "List all department names ordered by their starting date ."
+  },
+  {
+   "i": 93,
+   "db_id": "match_season",
+   "bucket": "single_join",
+   "question": "Which players are from Indonesia ?"
+  },
+  {
+   "i": 94,
+   "db_id": "hospital_1",
+   "bucket": "single_table_analytic",
+   "question": "Find the patient who most recently stayed in room 111 ."
+  },
+  {
+   "i": 95,
+   "db_id": "browser_web",
+   "bucket": "multi_join",
+   "question": "give me names of all compatible browsers and accelerators in the descending order of compatible year"
+  },
+  {
+   "i": 96,
+   "db_id": "small_bank_1",
+   "bucket": "nested",
+   "question": "Find the name and id of accounts whose checking balance is below the maximum checking balance ."
+  },
+  {
+   "i": 97,
+   "db_id": "icfp_1",
+   "bucket": "multi_join",
+   "question": "Find all the papers published by ' Aaron Turon ' ."
+  },
+  {
+   "i": 98,
+   "db_id": "wedding",
+   "bucket": "group_by",
+   "question": "Show all countries and the number of people from each country ."
+  },
+  {
+   "i": 99,
+   "db_id": "epinions_1",
+   "bucket": "nested",
+   "question": "Find the names of the items that did not receive any review ."
+  },
+  {
+   "i": 100,
+   "db_id": "news_report",
+   "bucket": "single_table_analytic",
+   "question": "What is the average number of years spent working as a journalist ?"
+  },
+  {
+   "i": 101,
+   "db_id": "storm_record",
+   "bucket": "having",
+   "question": "Show the region name with at least two storms ."
+  },
+  {
+   "i": 102,
+   "db_id": "browser_web",
+   "bucket": "set_op",
+   "question": "List the names of the browser that are compatible with both ' CACHEbox ' and ' Fasterfox ' ."
+  },
+  {
+   "i": 103,
+   "db_id": "company_office",
+   "bucket": "multi_join",
+   "question": "List the name of a building along with the name of a company whose office is in the building ."
+  },
+  {
+   "i": 104,
+   "db_id": "wine_1",
+   "bucket": "group_by",
+   "question": "What are the Numbers of wines for different grapes ?"
+  },
+  {
+   "i": 105,
+   "db_id": "game_1",
+   "bucket": "having",
+   "question": "Show all advisors who have at least two students ."
+  },
+  {
+   "i": 106,
+   "db_id": "entertainment_awards",
+   "bucket": "having",
+   "question": "Show the ids and names of festivals that have at least two nominations for artworks ."
+  },
+  {
+   "i": 107,
+   "db_id": "network_2",
+   "bucket": "nested",
+   "question": "Find the number of people whose age is greater than all engineer ."
+  },
+  {
+   "i": 108,
+   "db_id": "train_station",
+   "bucket": "multi_join",
+   "question": "Show all train names and times in stations in London in descending order by train time ."
+  },
+  {
+   "i": 109,
+   "db_id": "musical",
+   "bucket": "group_by",
+   "question": "Show different nominees and the number of musicals they have been nominated ."
+  },
+  {
+   "i": 110,
+   "db_id": "apartment_rentals",
+   "bucket": "single_join",
+   "question": "Show the total number of rooms of the apartments in the building with short name ' Columbus Square ' ."
+  },
+  {
+   "i": 111,
+   "db_id": "cre_Doc_Control_Systems",
+   "bucket": "group_by",
+   "question": "Which document has the most draft copies ? List its document id and number of draft copies ."
+  },
+  {
+   "i": 112,
+   "db_id": "mountain_photos",
+   "bucket": "single_join",
+   "question": "What are the names of photos taken with the lens brand ' Sigma ' or ' Olympus ' ?"
+  },
+  {
+   "i": 113,
+   "db_id": "behavior_monitoring",
+   "bucket": "single_join",
+   "question": "Find the dates of assessment notes for students with first name ' Fanny ' ."
+  },
+  {
+   "i": 114,
+   "db_id": "local_govt_in_alabama",
+   "bucket": "group_by",
+   "question": "What is the most common participant type ?"
+  },
+  {
+   "i": 115,
+   "db_id": "journal_committee",
+   "bucket": "single_table_analytic",
+   "question": "What is the name of the youngest editor ?"
+  },
+  {
+   "i": 116,
+   "db_id": "flight_4",
+   "bucket": "single_join",
+   "question": "Find the number of routes that have destination John F Kennedy International Airport ."
+  },
+  {
+   "i": 117,
+   "db_id": "wine_1",
+   "bucket": "having",
+   "question": "Find the wineries that have at least four wines ."
+  },
+  {
+   "i": 118,
+   "db_id": "student_assessment",
+   "bucket": "multi_join",
+   "question": "How many registed students do each course have ? List course name and the number of their registered students ?"
+  },
+  {
+   "i": 119,
+   "db_id": "network_2",
+   "bucket": "group_by",
+   "question": "Find the number of people who is under 40 for each gender ."
+  },
+  {
+   "i": 120,
+   "db_id": "inn_1",
+   "bucket": "group_by",
+   "question": "Which room has the highest rate ? List the room 's full name , rate , check in and check out date ."
+  },
+  {
+   "i": 121,
+   "db_id": "phone_market",
+   "bucket": "set_op",
+   "question": "Show the carriers that have both phones with memory smaller than 32 and phones with memory bigger than 64 ."
+  },
+  {
+   "i": 122,
+   "db_id": "college_3",
+   "bucket": "multi_join",
+   "question": "Find the last names of faculties who are members of Computer Science department ."
+  },
+  {
+   "i": 123,
+   "db_id": "tracking_grants_for_research",
+   "bucket": "single_table_analytic",
+   "question": "How many tasks are there in total ?"
+  },
+  {
+   "i": 124,
+   "db_id": "restaurant_1",
+   "bucket": "single_table_analytic",
+   "question": "Advisor 1121 has how many students ?"
+  },
+  {
+   "i": 125,
+   "db_id": "bike_1",
+   "bucket": "nested",
+   "question": "On which day and in which zip code was the min dew point lower than any day in zip code 94107 ?"
+  },
+  {
+   "i": 126,
+   "db_id": "formula_1",
+   "bucket": "multi_join",
+   "question": "Find the id and surname of the driver who participated the most number of races ?"
+  },
+  {
+   "i": 127,
+   "db_id": "college_2",
+   "bucket": "nested",
+   "question": "Find the salaries of all distinct instructors that are less than the largest salary ."
+  },
+  {
+   "i": 128,
+   "db_id": "musical",
+   "bucket": "group_by",
+   "question": "Show names of musicals and the number of actors who have appeared in the musicals ."
+  },
+  {
+   "i": 129,
+   "db_id": "store_1",
+   "bucket": "multi_join",
+   "question": "List the name of tracks Belong to genre Rock and whose media type is MPEG audio file ."
+  },
+  {
+   "i": 130,
+   "db_id": "wedding",
+   "bucket": "nested",
+   "question": "Show the name and age for all male people who do n't have a wedding ."
+  },
+  {
+   "i": 131,
+   "db_id": "railway",
+   "bucket": "single_table_analytic",
+   "question": "List the builders of railways in ascending alphabetical order ."
+  },
+  {
+   "i": 132,
+   "db_id": "small_bank_1",
+   "bucket": "nested",
+   "question": "How many accounts have a savings balance above the average savings balance ?"
+  },
+  {
+   "i": 133,
+   "db_id": "music_1",
+   "bucket": "nested",
+   "question": "What is ids of the songs whose resolution is higher than the average resolution of songs in modern genre ?"
+  },
+  {
+   "i": 134,
+   "db_id": "device",
+   "bucket": "single_table_analytic",
+   "question": "How many different software platforms are there for devices ?"
+  },
+  {
+   "i": 135,
+   "db_id": "county_public_safety",
+   "bucket": "nested",
+   "question": "Show the name of cities in the county that has the largest number of police officers ."
+  },
+  {
+   "i": 136,
+   "db_id": "assets_maintenance",
+   "bucket": "having",
+   "question": "Which parts have more than 2 faults ? Show the part name and id ."
+  },
+  {
+   "i": 137,
+   "db_id": "baseball_1",
+   "bucket": "having",
+   "question": "Which cities have 2 to 4 parks ?"
+  },
+  {
+   "i": 138,
+   "db_id": "medicine_enzyme_interaction",
+   "bucket": "having",
+   "question": "What is the id and trade name of the medicines can interact with at least 3 enzymes ?"
+  },
+  {
+   "i": 139,
+   "db_id": "cre_Docs_and_Epenses",
+   "bucket": "nested",
+   "question": "How many documents do not have any expense ?"
+  },
+  {
+   "i": 140,
+   "db_id": "game_injury",
+   "bucket": "single_join",
+   "question": "How many distinct kinds of injuries happened after season 2010 ?"
+  },
+  {
+   "i": 141,
+   "db_id": "insurance_and_eClaims",
+   "bucket": "nested",
+   "question": "Which customer is associated with the latest policy ?"
+  },
+  {
+   "i": 142,
+   "db_id": "railway",
+   "bucket": "group_by",
+   "question": "Show different locations of railways along with the corresponding number of railways at each location ."
+  },
+  {
+   "i": 143,
+   "db_id": "store_1",
+   "bucket": "multi_join",
+   "question": "List all tracks bought by customer Daan Peeters ."
+  },
+  {
+   "i": 144,
+   "db_id": "storm_record",
+   "bucket": "single_table_analytic",
+   "question": "Show the average and maximum damage for all storms with max speed higher than 1000 ."
+  },
+  {
+   "i": 145,
+   "db_id": "school_bus",
+   "bucket": "nested",
+   "question": "Show the names of the drivers without a school bus ."
+  },
+  {
+   "i": 146,
+   "db_id": "cinema",
+   "bucket": "group_by",
+   "question": "List all directors along with the number of films directed by each director ."
+  },
+  {
+   "i": 147,
+   "db_id": "driving_school",
+   "bucket": "having",
+   "question": "List the states which have between 2 to 4 staffs living there ."
+  },
+  {
+   "i": 148,
+   "db_id": "csu_1",
+   "bucket": "single_join",
+   "question": "What is the campus fee of ' San Jose State University ' in year 1996 ?"
+  },
+  {
+   "i": 149,
+   "db_id": "activity_1",
+   "bucket": "group_by",
+   "question": "For each faculty rank , show the number of faculty members who have it ."
+  },
+  {
+   "i": 150,
+   "db_id": "phone_market",
+   "bucket": "multi_join",
+   "question": "Show the names of phones and the districts of markets they are on ."
+  },
+  {
+   "i": 151,
+   "db_id": "icfp_1",
+   "bucket": "multi_join",
+   "question": "Find the titles of papers whose first author is affiliated with an institution in the country ' Japan ' and has last name ' Ohori ' ?"
+  },
+  {
+   "i": 152,
+   "db_id": "music_2",
+   "bucket": "multi_join",
+   "question": "Find all the songs performed by artist with last name ' Heilo '"
+  },
+  {
+   "i": 153,
+   "db_id": "student_assessment",
+   "bucket": "group_by",
+   "question": "which course has most number of registered students ?"
+  },
+  {
+   "i": 154,
+   "db_id": "college_1",
+   "bucket": "single_join",
+   "question": "Find the first names and offices of all professors sorted by alphabetical order of their first name ."
+  },
+  {
+   "i": 155,
+   "db_id": "flight_4",
+   "bucket": "single_join",
+   "question": "Find the number of routes with destination airports in Italy ."
+  },
+  {
+   "i": 156,
+   "db_id": "race_track",
+   "bucket": "group_by",
+   "question": "Show the name of track and the number of races in each track ."
+  },
+  {
+   "i": 157,
+   "db_id": "party_host",
+   "bucket": "single_table_analytic",
+   "question": "What is the location of the party with the most hosts ?"
+  },
+  {
+   "i": 158,
+   "db_id": "cre_Doc_Control_Systems",
+   "bucket": "group_by",
+   "question": "Which shipping agent Ship the most documents ? List the shipping agent name and the number of documents ."
+  },
+  {
+   "i": 159,
+   "db_id": "customer_deliveries",
+   "bucket": "group_by",
+   "question": "Find the name and price of the product that has been ordered the greatest number of times ."
+  },
+  {
+   "i": 160,
+   "db_id": "cre_Doc_Control_Systems",
+   "bucket": "single_join",
+   "question": "List all employees in the circulation history of the document with id 1 . List the employee 's name ."
+  },
+  {
+   "i": 161,
+   "db_id": "hr_1",
+   "bucket": "having",
+   "question": "display the ID for those employees who did two or more jobs in the past ."
+  },
+  {
+   "i": 162,
+   "db_id": "network_2",
+   "bucket": "nested",
+   "question": "Who is the youngest male ?"
+  },
+  {
+   "i": 163,
+   "db_id": "hospital_1",
+   "bucket": "single_join",
+   "question": "Find the names of nurses who are nursing an undergoing treatment ."
+  },
+  {
+   "i": 164,
+   "db_id": "soccer_2",
+   "bucket": "set_op",
+   "question": "Find the names of schools that have some players in the mid position but not in the goalie position ."
+  },
+  {
+   "i": 165,
+   "db_id": "aircraft",
+   "bucket": "nested",
+   "question": "find the name of pilots who did not win the matches held in the country of Australia ."
+  },
+  {
+   "i": 166,
+   "db_id": "cre_Theme_park",
+   "bucket": "single_join",
+   "question": "What is the name of the staff that is in charge of the attraction named ' US museum ' ?"
+  },
+  {
+   "i": 167,
+   "db_id": "pilot_record",
+   "bucket": "multi_join",
+   "question": "Show the names of pilots and models of aircrafts they have flied with ."
+  },
+  {
+   "i": 168,
+   "db_id": "customer_complaints",
+   "bucket": "single_table_analytic",
+   "question": "Find the emails and phone numbers of all the customers , ordered by email address and phone number ."
+  },
+  {
+   "i": 169,
+   "db_id": "epinions_1",
+   "bucket": "group_by",
+   "question": "Find the name and id of the item with the highest average rating ."
+  },
+  {
+   "i": 170,
+   "db_id": "machine_repair",
+   "bucket": "having",
+   "question": "Show the team that have at least two technicians ."
+  },
+  {
+   "i": 171,
+   "db_id": "customers_and_addresses",
+   "bucket": "nested",
+   "question": "What are the names of customers using the most popular payment method ?"
+  },
+  {
+   "i": 172,
+   "db_id": "music_4",
+   "bucket": "single_join",
+   "question": "Please show the date of ceremony of the volumes that last more than 2 weeks on top ."
+  },
+  {
+   "i": 173,
+   "db_id": "college_3",
+   "bucket": "single_join",
+   "question": "What are the first names and last names of the students that minor in the department with DNO 140 ."
+  },
+  {
+   "i": 174,
+   "db_id": "school_player",
+   "bucket": "single_table_analytic",
+   "question": "List the school color of the school that has the largest enrollment ."
+  },
+  {
+   "i": 175,
+   "db_id": "architecture",
+   "bucket": "multi_join",
+   "question": "What are the distinct name of the mills built by the architects who have also built a bridge longer than 80 meters ?"
+  },
+  {
+   "i": 176,
+   "db_id": "party_people",
+   "bucket": "group_by",
+   "question": "What is the name of party with most number of members ?"
+  },
+  {
+   "i": 177,
+   "db_id": "sports_competition",
+   "bucket": "set_op",
+   "question": "which countries did participated in both Friendly and Tournament type competitions ."
+  },
+  {
+   "i": 178,
+   "db_id": "storm_record",
+   "bucket": "nested",
+   "question": "Show the name of storms which do n't have affected region in record ."
+  },
+  {
+   "i": 179,
+   "db_id": "cre_Doc_Tracking_DB",
+   "bucket": "single_table_analytic",
+   "question": "Show the number of locations ."
+  },
+  {
+   "i": 180,
+   "db_id": "club_1",
+   "bucket": "multi_join",
+   "question": "Find the name of the club that has the most female students ."
+  },
+  {
+   "i": 181,
+   "db_id": "baseball_1",
+   "bucket": "single_table_analytic",
+   "question": "List the 3 highest salaries of the players in 2001 ?"
+  },
+  {
+   "i": 182,
+   "db_id": "flight_1",
+   "bucket": "single_table_analytic",
+   "question": "What is the average price for flights from Los Angeles to Honolulu ."
+  },
+  {
+   "i": 183,
+   "db_id": "race_track",
+   "bucket": "set_op",
+   "question": "What are the names for tracks without a race in class ' GT ' ."
+  },
+  {
+   "i": 184,
+   "db_id": "tracking_grants_for_research",
+   "bucket": "group_by",
+   "question": "What is the total amount of grants given by each organisations ? Also list the organisation id ."
+  },
+  {
+   "i": 185,
+   "db_id": "culture_company",
+   "bucket": "group_by",
+   "question": "What is the publisher with most number of books ?"
+  },
+  {
+   "i": 186,
+   "db_id": "scientist_1",
+   "bucket": "group_by",
+   "question": "Find the number of projects which each scientist is working on and scientist 's name ."
+  },
+  {
+   "i": 187,
+   "db_id": "college_2",
+   "bucket": "having",
+   "question": "Find the name of instructors who are advising more than one student ."
+  },
+  {
+   "i": 188,
+   "db_id": "election",
+   "bucket": "single_join",
+   "question": "Who were the governors of the parties associated with delegates from district 1 ?"
+  },
+  {
+   "i": 189,
+   "db_id": "game_injury",
+   "bucket": "set_op",
+   "question": "List the name of the stadium where both the player ' Walter Samuel ' and the player ' Thiago Motta ' got injured ."
+  },
+  {
+   "i": 190,
+   "db_id": "e_learning",
+   "bucket": "single_join",
+   "question": "What are the completion dates of all the tests that have result ' Fail ' ?"
+  },
+  {
+   "i": 191,
+   "db_id": "loan_1",
+   "bucket": "group_by",
+   "question": "Find the name of bank branch that provided the greatest total amount of loans ."
+  },
+  {
+   "i": 192,
+   "db_id": "college_1",
+   "bucket": "multi_join",
+   "question": "Find names of all students who took some course and the course description ."
+  },
+  {
+   "i": 193,
+   "db_id": "swimming",
+   "bucket": "having",
+   "question": "Find the name and nationality of the swimmer who has Win ( i.e. , has a result of ' Win ' ) more than 1 time ."
+  },
+  {
+   "i": 194,
+   "db_id": "club_1",
+   "bucket": "multi_join",
+   "question": "Find all the male members of club ' Hopkins Student Enterprises ' . Show the first name and last name ."
+  },
+  {
+   "i": 195,
+   "db_id": "products_gen_characteristics",
+   "bucket": "single_join",
+   "question": "How many characteristics does the product named ' sesame ' have ?"
+  },
+  {
+   "i": 196,
+   "db_id": "manufacturer",
+   "bucket": "nested",
+   "question": "Find the market shares and names of furnitures which no any company is producing in our records ."
+  },
+  {
+   "i": 197,
+   "db_id": "wedding",
+   "bucket": "having",
+   "question": "Show the opening year in whcih at least two churches opened ."
+  },
+  {
+   "i": 198,
+   "db_id": "wine_1",
+   "bucket": "set_op",
+   "question": "Find the appelations that produce wines after the year of 2008 but not in Central Coast area ."
+  },
+  {
+   "i": 199,
+   "db_id": "cre_Docs_and_Epenses",
+   "bucket": "group_by",
+   "question": "Show all statement id and the number of accounts for each statement ."
+  },
+  {
+   "i": 200,
+   "db_id": "icfp_1",
+   "bucket": "multi_join",
+   "question": "Retrieve the country that has published the most papers ."
+  },
+  {
+   "i": 201,
+   "db_id": "student_assessment",
+   "bucket": "set_op",
+   "question": "Find the id of courses which are registered or attended by student whose id is 121 ?"
+  },
+  {
+   "i": 202,
+   "db_id": "music_1",
+   "bucket": "single_join",
+   "question": "What is the average duration of songs that have mp3 format and resolution below 800 ?"
+  },
+  {
+   "i": 203,
+   "db_id": "behavior_monitoring",
+   "bucket": "set_op",
+   "question": "Find the last names of teachers who are not involved in any detention ."
+  },
+  {
+   "i": 204,
+   "db_id": "perpetrator",
+   "bucket": "set_op",
+   "question": "Show the countries that have both perpetrators with injures more than 50 and perpetrators with injures smaller than 20 ."
+  },
+  {
+   "i": 205,
+   "db_id": "movie_1",
+   "bucket": "nested",
+   "question": "What is the maximum stars and year for the most recent movie ?"
+  },
+  {
+   "i": 206,
+   "db_id": "hospital_1",
+   "bucket": "set_op",
+   "question": "Find the names of patients who are not using the medication of Procrastin-X ."
+  },
+  {
+   "i": 207,
+   "db_id": "train_station",
+   "bucket": "nested",
+   "question": "Show station names without any trains ."
+  },
+  {
+   "i": 208,
+   "db_id": "browser_web",
+   "bucket": "having",
+   "question": "What are the ids and names of the web accelerators that are compatible with two or more browsers ?"
+  },
+  {
+   "i": 209,
+   "db_id": "department_store",
+   "bucket": "having",
+   "question": "List the name of staff who has been assigned multiple jobs ."
+  },
+  {
+   "i": 210,
+   "db_id": "music_1",
+   "bucket": "having",
+   "question": "Find the name and country of origin for all artists who have release at least one song of resolution above 900 ."
+  },
+  {
+   "i": 211,
+   "db_id": "company_office",
+   "bucket": "having",
+   "question": "Show the headquarters shared by more than two companies ."
+  },
+  {
+   "i": 212,
+   "db_id": "city_record",
+   "bucket": "single_table_analytic",
+   "question": "Which three cities have the largest regional population ?"
+  },
+  {
+   "i": 213,
+   "db_id": "local_govt_in_alabama",
+   "bucket": "nested",
+   "question": "How many events did not have any participants ?"
+  },
+  {
+   "i": 214,
+   "db_id": "station_weather",
+   "bucket": "multi_join",
+   "question": "Find names and times of trains that run through stations for the local authority Chiltern ."
+  },
+  {
+   "i": 215,
+   "db_id": "voter_2",
+   "bucket": "single_join",
+   "question": "Find the distinct Advisor of students who have treasurer votes in the Spring election cycle ."
+  },
+  {
+   "i": 216,
+   "db_id": "network_2",
+   "bucket": "multi_join",
+   "question": "Find Alice 's friends of friends ."
+  },
+  {
+   "i": 217,
+   "db_id": "customers_and_invoices",
+   "bucket": "nested",
+   "question": "Show ids for all transactions whose amounts are greater than the average ."
+  },
+  {
+   "i": 218,
+   "db_id": "icfp_1",
+   "bucket": "multi_join",
+   "question": "Who belong to the institution ' University of Oxford ' ? Show the first names and last names ."
+  },
+  {
+   "i": 219,
+   "db_id": "assets_maintenance",
+   "bucket": "group_by",
+   "question": "How many assets can each parts be used in ? List the part name and the number ."
+  },
+  {
+   "i": 220,
+   "db_id": "epinions_1",
+   "bucket": "group_by",
+   "question": "Find the name of the source user with the highest average trust score ."
+  },
+  {
+   "i": 221,
+   "db_id": "college_2",
+   "bucket": "nested",
+   "question": "Find the name and salary of instructors whose salary is below the average salary of the instructors in the Physics department ."
+  },
+  {
+   "i": 222,
+   "db_id": "activity_1",
+   "bucket": "group_by",
+   "question": "Which rank has the smallest number of faculty members ?"
+  },
+  {
+   "i": 223,
+   "db_id": "manufactory_1",
+   "bucket": "nested",
+   "question": "Find the total revenue of companies whose revenue is larger than the revenue of some companies based in Austin ."
+  },
+  {
+   "i": 224,
+   "db_id": "loan_1",
+   "bucket": "having",
+   "question": "Find the name and account balance of the customers who have loans with a total amount of more than 5000 ."
+  },
+  {
+   "i": 225,
+   "db_id": "medicine_enzyme_interaction",
+   "bucket": "multi_join",
+   "question": "What is the interaction type of the enzyme named ' ALA synthase ' and the medicine named ' Aripiprazole ' ?"
+  },
+  {
+   "i": 226,
+   "db_id": "allergy_1",
+   "bucket": "nested",
+   "question": "Show the student id of the oldest student ."
+  },
+  {
+   "i": 227,
+   "db_id": "cre_Drama_Workshop_Groups",
+   "bucket": "set_op",
+   "question": "What is the description of the service type which offers both the photo product and the film product ?"
+  },
+  {
+   "i": 228,
+   "db_id": "club_1",
+   "bucket": "multi_join",
+   "question": "How many members of ' Bootup Baltimore ' are older than 18 ?"
+  },
+  {
+   "i": 229,
+   "db_id": "tracking_orders",
+   "bucket": "having",
+   "question": "Find the name of the customers who have at most two orders ."
+  },
+  {
+   "i": 230,
+   "db_id": "device",
+   "bucket": "set_op",
+   "question": "Show the locations shared by shops with open year later than 2012 and shops with open year before 2008 ."
+  },
+  {
+   "i": 231,
+   "db_id": "election_representative",
+   "bucket": "having",
+   "question": "What parties have at least three representatives ?"
+  },
+  {
+   "i": 232,
+   "db_id": "news_report",
+   "bucket": "group_by",
+   "question": "Show the different nationalities and the number of journalists of each nationality ."
+  },
+  {
+   "i": 233,
+   "db_id": "insurance_fnol",
+   "bucket": "group_by",
+   "question": "What is the name of the customer who has the most policies listed ?"
+  },
+  {
+   "i": 234,
+   "db_id": "customers_card_transactions",
+   "bucket": "group_by",
+   "question": "What is the customer first , last name and id with least number of accounts ."
+  },
+  {
+   "i": 235,
+   "db_id": "sakila_1",
+   "bucket": "group_by",
+   "question": "What is the most popular full name of the actors ?"
+  },
+  {
+   "i": 236,
+   "db_id": "machine_repair",
+   "bucket": "nested",
+   "question": "List the names of technicians who have not been assigned to repair machines ."
+  },
+  {
+   "i": 237,
+   "db_id": "customers_and_products_contacts",
+   "bucket": "multi_join",
+   "question": "Show the customer name , customer address city , date from , and date to for each customer address history ."
+  },
+  {
+   "i": 238,
+   "db_id": "shop_membership",
+   "bucket": "nested",
+   "question": "List the branch name and city without any registered members ."
+  },
+  {
+   "i": 239,
+   "db_id": "election",
+   "bucket": "set_op",
+   "question": "Which committees have delegates from both Democratic party and Liberal party ?"
+  },
+  {
+   "i": 240,
+   "db_id": "mountain_photos",
+   "bucket": "single_table_analytic",
+   "question": "How many camera lenses have a focal length longer than 15 mm ?"
+  },
+  {
+   "i": 241,
+   "db_id": "university_basketball",
+   "bucket": "nested",
+   "question": "Find the team names of the universities whose enrollments are smaller than the average enrollment size ."
+  },
+  {
+   "i": 242,
+   "db_id": "journal_committee",
+   "bucket": "multi_join",
+   "question": "Show the names of editors that are on the committee of journals with sales bigger than 3000 ."
+  },
+  {
+   "i": 243,
+   "db_id": "baseball_1",
+   "bucket": "group_by",
+   "question": "What is the average number of attendance at home games for each year ?"
+  },
+  {
+   "i": 244,
+   "db_id": "local_govt_and_lot",
+   "bucket": "group_by",
+   "question": "How many residents does each property have ? List property id and resident count ."
+  },
+  {
+   "i": 245,
+   "db_id": "flight_4",
+   "bucket": "having",
+   "question": "Return the cities with more than 3 airports in the United States ."
+  },
+  {
+   "i": 246,
+   "db_id": "voter_2",
+   "bucket": "single_join",
+   "question": "Find the distinct ages of students who have secretary votes in the Fall election cycle ."
+  },
+  {
+   "i": 247,
+   "db_id": "department_store",
+   "bucket": "group_by",
+   "question": "For each payment method , return how many customers use it ."
+  },
+  {
+   "i": 248,
+   "db_id": "apartment_rentals",
+   "bucket": "set_op",
+   "question": "Show the apartment numbers of apartments with bookings that have status code both ' Provisional ' and ' Confirmed '"
+  },
+  {
+   "i": 249,
+   "db_id": "entertainment_awards",
+   "bucket": "multi_join",
+   "question": "Show the names of artworks in ascending order of the year they are nominated in ."
+  },
+  {
+   "i": 250,
+   "db_id": "phone_1",
+   "bucket": "multi_join",
+   "question": "List the hardware model name for the phones that have screen mode type ' Text ' or RAM size greater than 32 ."
+  },
+  {
+   "i": 251,
+   "db_id": "club_1",
+   "bucket": "multi_join",
+   "question": "Who is the ' CTO ' of club ' Hopkins Student Enterprises ' ? Show the first name and last name ."
+  },
+  {
+   "i": 252,
+   "db_id": "college_2",
+   "bucket": "set_op",
+   "question": "Find courses that ran in Fall 2009 and in Spring 2010 ."
+  },
+  {
+   "i": 253,
+   "db_id": "insurance_policies",
+   "bucket": "group_by",
+   "question": "How many settlements does each claim correspond to ? List the claim id and the number of settlements ."
+  },
+  {
+   "i": 254,
+   "db_id": "cre_Docs_and_Epenses",
+   "bucket": "group_by",
+   "question": "Show the statement id and the statement detail for the statement with most number of accounts ."
+  },
+  {
+   "i": 255,
+   "db_id": "race_track",
+   "bucket": "having",
+   "question": "List the race class with at least two races ."
+  },
+  {
+   "i": 256,
+   "db_id": "document_management",
+   "bucket": "group_by",
+   "question": "Find the average access count of documents with the least popular structure ."
+  },
+  {
+   "i": 257,
+   "db_id": "bike_1",
+   "bucket": "set_op",
+   "question": "What are the names of stations that are located in Palo Alto city but have never been the ending point of trips more than 100 times ?"
+  },
+  {
+   "i": 258,
+   "db_id": "customers_and_products_contacts",
+   "bucket": "multi_join",
+   "question": "What are the name and phone of the customer with the most ordered product quantity ?"
+  },
+  {
+   "i": 259,
+   "db_id": "entertainment_awards",
+   "bucket": "multi_join",
+   "question": "For each nomination , show the name of the artwork and name of the festival where it is nominated ."
+  },
+  {
+   "i": 260,
+   "db_id": "voter_2",
+   "bucket": "single_join",
+   "question": "Find the distinct first names of the students who have class senator votes ."
+  },
+  {
+   "i": 261,
+   "db_id": "tracking_software_problems",
+   "bucket": "nested",
+   "question": "What are the ids of the problems reported before the date of any problem Reported by Lysanne Turcotte ?"
+  },
+  {
+   "i": 262,
+   "db_id": "tracking_grants_for_research",
+   "bucket": "single_join",
+   "question": "What are all the details of the organisations described as ' Sponsor ' ? Sort the result in an ascending order ."
+  },
+  {
+   "i": 263,
+   "db_id": "e_learning",
+   "bucket": "group_by",
+   "question": "Find the subject ID , subject name , and the corresponding number of available courses for each subject ."
+  },
+  {
+   "i": 264,
+   "db_id": "swimming",
+   "bucket": "nested",
+   "question": "Find the names of the swimmers who have no record ."
+  },
+  {
+   "i": 265,
+   "db_id": "bike_1",
+   "bucket": "set_op",
+   "question": "Find all the zip codes in which the max dew point have never reached 70 ."
+  },
+  {
+   "i": 266,
+   "db_id": "city_record",
+   "bucket": "having",
+   "question": "What are the GDP and population of the city that already served as a host more than once ?"
+  },
+  {
+   "i": 267,
+   "db_id": "college_3",
+   "bucket": "group_by",
+   "question": "Find the rank of the faculty that the fewest faculties belong to ."
+  },
+  {
+   "i": 268,
+   "db_id": "journal_committee",
+   "bucket": "multi_join",
+   "question": "Show the names of editors and the theme of journals for which they serve on committees ."
+  },
+  {
+   "i": 269,
+   "db_id": "cre_Drama_Workshop_Groups",
+   "bucket": "single_join",
+   "question": "What are the actual delivery dates of orders with quantity 1 ?"
+  },
+  {
+   "i": 270,
+   "db_id": "railway",
+   "bucket": "having",
+   "question": "Show id and location of railways that are associated with more than one train ."
+  },
+  {
+   "i": 271,
+   "db_id": "hospital_1",
+   "bucket": "single_table_analytic",
+   "question": "How many different types of rooms are there ?"
+  },
+  {
+   "i": 272,
+   "db_id": "products_gen_characteristics",
+   "bucket": "having",
+   "question": "Find the id and color description of the products with at least 2 characteristics ."
+  },
+  {
+   "i": 273,
+   "db_id": "storm_record",
+   "bucket": "multi_join",
+   "question": "Find the names of the regions which were affected by the storm that killed the greatest number of people ."
+  },
+  {
+   "i": 274,
+   "db_id": "hr_1",
+   "bucket": "nested",
+   "question": "display the employee name ( first name and last name ) and hire date for all employees in the same department as Clara ."
+  },
+  {
+   "i": 275,
+   "db_id": "flight_1",
+   "bucket": "single_table_analytic",
+   "question": "Show the id and name of the aircraft with the maximum distance ."
+  },
+  {
+   "i": 276,
+   "db_id": "workshop_paper",
+   "bucket": "group_by",
+   "question": "Show different colleges along with the number of authors of submission from each college ."
+  },
+  {
+   "i": 277,
+   "db_id": "customer_complaints",
+   "bucket": "group_by",
+   "question": "Find the emails of customers who has filed a complaints of the product with the most complaints ."
+  },
+  {
+   "i": 278,
+   "db_id": "debate",
+   "bucket": "multi_join",
+   "question": "Show the names of people , and dates and venues of debates they are on the negative side , ordered in ascending alphabetical order of name ."
+  },
+  {
+   "i": 279,
+   "db_id": "performance_attendance",
+   "bucket": "multi_join",
+   "question": "Show the names of members and the location of the performances they attended ."
+  },
+  {
+   "i": 280,
+   "db_id": "flight_4",
+   "bucket": "single_table_analytic",
+   "question": "Find the name , city , and country of the airport that has the lowest altitude ."
+  },
+  {
+   "i": 281,
+   "db_id": "hr_1",
+   "bucket": "nested",
+   "question": "Find the employee id for all employees who earn more than the average salary ."
+  },
+  {
+   "i": 282,
+   "db_id": "scientist_1",
+   "bucket": "multi_join",
+   "question": "Find the total hours of the projects that scientists named Michael Rogers or Carol Smith are assigned to ."
+  },
+  {
+   "i": 283,
+   "db_id": "insurance_policies",
+   "bucket": "having",
+   "question": "List the date the claim was made , the date it was settled and the amount settled for all the claims which had exactly one settlement ."
+  },
+  {
+   "i": 284,
+   "db_id": "e_government",
+   "bucket": "having",
+   "question": "Find the payment method code used by more than 3 parties ."
+  },
+  {
+   "i": 285,
+   "db_id": "game_1",
+   "bucket": "group_by",
+   "question": "Show the game name that has most number of hours played ."
+  },
+  {
+   "i": 286,
+   "db_id": "election_representative",
+   "bucket": "single_join",
+   "question": "What are the names of representatives and the dates of elections they participated in ."
+  },
+  {
+   "i": 287,
+   "db_id": "formula_1",
+   "bucket": "having",
+   "question": "Find the driver id and number of races of all drivers who have at most participated in 30 races ?"
+  },
+  {
+   "i": 288,
+   "db_id": "shop_membership",
+   "bucket": "set_op",
+   "question": "Find the name of branches where have some members whose hometown is in Louisville, Kentucky and some in Hiram, Georgia ."
+  },
+  {
+   "i": 289,
+   "db_id": "phone_1",
+   "bucket": "having",
+   "question": "Find the accreditation level that more than 3 phones use ."
+  },
+  {
+   "i": 290,
+   "db_id": "hospital_1",
+   "bucket": "multi_join",
+   "question": "Find the name of physicians who are affiliated with Surgery or Psychiatry department ."
+  },
+  {
+   "i": 291,
+   "db_id": "news_report",
+   "bucket": "nested",
+   "question": "List the names of journalists who have not reported any event ."
+  },
+  {
+   "i": 292,
+   "db_id": "e_government",
+   "bucket": "group_by",
+   "question": "What is the name of organization that has the greatest number of contact individuals ?"
+  },
+  {
+   "i": 293,
+   "db_id": "sports_competition",
+   "bucket": "single_table_analytic",
+   "question": "List all club names in ascending order of start year ."
+  },
+  {
+   "i": 294,
+   "db_id": "tracking_software_problems",
+   "bucket": "single_join",
+   "question": "List the problem id and log id which are assigned to the staff named Rylan Homenick ."
+  },
+  {
+   "i": 295,
+   "db_id": "voter_2",
+   "bucket": "set_op",
+   "question": "Find the distinct last names of all the students who have president votes and whose advisor is 8741 ."
+  },
+  {
+   "i": 296,
+   "db_id": "perpetrator",
+   "bucket": "having",
+   "question": "What are the countries that have at least two perpetrators ?"
+  },
+  {
+   "i": 297,
+   "db_id": "inn_1",
+   "bucket": "group_by",
+   "question": "Find the number of rooms for each bed type ."
+  },
+  {
+   "i": 298,
+   "db_id": "sakila_1",
+   "bucket": "having",
+   "question": "Which film actors ( actresses ) played a role in more than 30 films ? List his or her first name and last name ."
+  },
+  {
+   "i": 299,
+   "db_id": "store_1",
+   "bucket": "single_join",
+   "question": "List name of all tracks in Balls to the Wall ."
+  },
+  {
+   "i": 300,
+   "db_id": "gas_company",
+   "bucket": "nested",
+   "question": "Show company name and main industry without a gas station ."
+  },
+  {
+   "i": 301,
+   "db_id": "game_injury",
+   "bucket": "single_join",
+   "question": "What is the season of the game which causes the player ' Walter Samuel ' to get injured ?"
+  },
+  {
+   "i": 302,
+   "db_id": "culture_company",
+   "bucket": "set_op",
+   "question": "Show all publishers which do not have a book in 1989 ."
+  },
+  {
+   "i": 303,
+   "db_id": "tracking_grants_for_research",
+   "bucket": "multi_join",
+   "question": "What are the result description of the project whose detail is ' sint ' ?"
+  },
+  {
+   "i": 304,
+   "db_id": "match_season",
+   "bucket": "single_join",
+   "question": "Show the season , the player , and the name of the country that player belongs to ."
+  },
+  {
+   "i": 305,
+   "db_id": "bike_1",
+   "bucket": "set_op",
+   "question": "What are names of stations that have average bike availability above 10 and are not located in San Jose city ?"
+  },
+  {
+   "i": 306,
+   "db_id": "shop_membership",
+   "bucket": "group_by",
+   "question": "Show the city and the number of branches opened before 2010 for each city ."
+  },
+  {
+   "i": 307,
+   "db_id": "college_3",
+   "bucket": "group_by",
+   "question": "Which building does the instructor who teaches the most number of courses live in ?"
+  },
+  {
+   "i": 308,
+   "db_id": "driving_school",
+   "bucket": "group_by",
+   "question": "Which city lives most of staffs ? List the city name and number of staffs ."
+  },
+  {
+   "i": 309,
+   "db_id": "gas_company",
+   "bucket": "single_table_analytic",
+   "question": "Show all company names and headquarters in the descending order of market value ."
+  },
+  {
+   "i": 310,
+   "db_id": "architecture",
+   "bucket": "set_op",
+   "question": "What are the ids , names and genders of the architects who built two bridges or one mill ?"
+  },
+  {
+   "i": 311,
+   "db_id": "college_1",
+   "bucket": "multi_join",
+   "question": "What is the first and last name of the professor in Biology department ?"
+  },
+  {
+   "i": 312,
+   "db_id": "mountain_photos",
+   "bucket": "single_table_analytic",
+   "question": "How many different kinds of lens brands are there ?"
+  },
+  {
+   "i": 313,
+   "db_id": "sakila_1",
+   "bucket": "having",
+   "question": "Which districts have at least two addresses ?"
+  },
+  {
+   "i": 314,
+   "db_id": "e_government",
+   "bucket": "multi_join",
+   "question": "Find the last name of the latest contact individual of the organization ' Labour Party ' ."
+  },
+  {
+   "i": 315,
+   "db_id": "assets_maintenance",
+   "bucket": "multi_join",
+   "question": "For all the faults of different parts , what are all the decriptions of the skills required to fix them ? List the name of the faults and the skill description ."
+  },
+  {
+   "i": 316,
+   "db_id": "music_1",
+   "bucket": "nested",
+   "question": "Find the distinct names of all songs that have a higher resolution than some songs in english ."
+  },
+  {
+   "i": 317,
+   "db_id": "station_weather",
+   "bucket": "group_by",
+   "question": "Find the number of trains for each station , as well as the station network name and services ."
+  },
+  {
+   "i": 318,
+   "db_id": "insurance_fnol",
+   "bucket": "nested",
+   "question": "What are all the policy types of the customer that has the most policies listed ?"
+  },
+  {
+   "i": 319,
+   "db_id": "riding_club",
+   "bucket": "multi_join",
+   "question": "Show the names of players and names of their coaches in descending order of the votes of players ."
+  },
+  {
+   "i": 320,
+   "db_id": "club_1",
+   "bucket": "multi_join",
+   "question": "How many clubs does ' Linda Smith ' belong to ?"
+  },
+  {
+   "i": 321,
+   "db_id": "solvency_ii",
+   "bucket": "having",
+   "question": "Show the product type codes that have at least two products ."
+  },
+  {
+   "i": 322,
+   "db_id": "riding_club",
+   "bucket": "set_op",
+   "question": "Show the residences that have both a player of gender ' M ' and a player of gender ' F ' ."
+  },
+  {
+   "i": 323,
+   "db_id": "entertainment_awards",
+   "bucket": "multi_join",
+   "question": "Show the names of festivals that have nominated artworks of type ' Program Talent Show ' ."
+  },
+  {
+   "i": 324,
+   "db_id": "roller_coaster",
+   "bucket": "group_by",
+   "question": "Show the different statuses and the numbers of roller coasters for each status ."
+  },
+  {
+   "i": 325,
+   "db_id": "shop_membership",
+   "bucket": "having",
+   "question": "List all open years when at least two shops are opened ."
+  },
+  {
+   "i": 326,
+   "db_id": "customers_and_addresses",
+   "bucket": "multi_join",
+   "question": "Which city has the most customers living in ?"
+  },
+  {
+   "i": 327,
+   "db_id": "soccer_2",
+   "bucket": "nested",
+   "question": "Find the name of the tryout players who are from the college with largest size ."
+  },
+  {
+   "i": 328,
+   "db_id": "theme_gallery",
+   "bucket": "nested",
+   "question": "What is the theme and artist name for the exhibition with a ticket price higher than the average ?"
+  },
+  {
+   "i": 329,
+   "db_id": "cre_Docs_and_Epenses",
+   "bucket": "single_join",
+   "question": "Show the statement detail and the corresponding document name for the statement with detail ' Private Project ' ."
+  },
+  {
+   "i": 330,
+   "db_id": "local_govt_and_lot",
+   "bucket": "single_join",
+   "question": "What is each customer 's move in date , and the corresponding customer id and details ?"
+  },
+  {
+   "i": 331,
+   "db_id": "activity_1",
+   "bucket": "single_table_analytic",
+   "question": "How many activities do we have ?"
+  },
+  {
+   "i": 332,
+   "db_id": "movie_1",
+   "bucket": "multi_join",
+   "question": "Find the names of all reviewers who rated Gone with the Wind ."
+  },
+  {
+   "i": 333,
+   "db_id": "allergy_1",
+   "bucket": "group_by",
+   "question": "Which allergy type has most number of allergies ?"
+  },
+  {
+   "i": 334,
+   "db_id": "hospital_1",
+   "bucket": "set_op",
+   "question": "Find all procedures which cost more than 1000 or which physician John Wen was trained in ."
+  },
+  {
+   "i": 335,
+   "db_id": "city_record",
+   "bucket": "multi_join",
+   "question": "What is the venue of the competition ' 1994 FIFA World Cup qualification ' hosted by ' Nanjing ( Jiangsu ) ' ?"
+  },
+  {
+   "i": 336,
+   "db_id": "college_3",
+   "bucket": "nested",
+   "question": "Find the first name of students not enrolled in any course ."
+  },
+  {
+   "i": 337,
+   "db_id": "dorm_1",
+   "bucket": "nested",
+   "question": "Find the first and last name of students who are living in the dorms that have amenity TV Lounge ."
+  },
+  {
+   "i": 338,
+   "db_id": "customers_and_invoices",
+   "bucket": "group_by",
+   "question": "Show the account id with most number of transactions ."
+  },
+  {
+   "i": 339,
+   "db_id": "manufacturer",
+   "bucket": "nested",
+   "question": "Find the names of furnitures whose prices are lower than the highest price ."
+  },
+  {
+   "i": 340,
+   "db_id": "music_4",
+   "bucket": "nested",
+   "question": "Find the famous titles of artists that do not have any volume ."
+  },
+  {
+   "i": 341,
+   "db_id": "company_office",
+   "bucket": "nested",
+   "question": "List the names of buildings that have no company office ."
+  },
+  {
+   "i": 342,
+   "db_id": "movie_1",
+   "bucket": "nested",
+   "question": "What is the name of the most recent movie ?"
+  },
+  {
+   "i": 343,
+   "db_id": "movie_1",
+   "bucket": "multi_join",
+   "question": "Find the names of all directors whose movies are rated by Sarah Martinez ."
+  },
+  {
+   "i": 344,
+   "db_id": "loan_1",
+   "bucket": "single_table_analytic",
+   "question": "How many distinct types of accounts are there ?"
+  },
+  {
+   "i": 345,
+   "db_id": "riding_club",
+   "bucket": "multi_join",
+   "question": "Show the names and genders of players with a coach starting after 2011 ."
+  },
+  {
+   "i": 346,
+   "db_id": "phone_market",
+   "bucket": "multi_join",
+   "question": "Show the names of phones that are on market with number of shops greater than 50 ."
+  },
+  {
+   "i": 347,
+   "db_id": "music_1",
+   "bucket": "set_op",
+   "question": "List the names of all songs that have 4 minute duration or are in english ."
+  },
+  {
+   "i": 348,
+   "db_id": "decoration_competition",
+   "bucket": "group_by",
+   "question": "Show the different countries and the number of members from each ."
+  },
+  {
+   "i": 349,
+   "db_id": "apartment_rentals",
+   "bucket": "single_join",
+   "question": "Show the facility codes of apartments with more than 4 bedrooms ."
+  },
+  {
+   "i": 350,
+   "db_id": "decoration_competition",
+   "bucket": "nested",
+   "question": "List the names of members who did not participate in any round ."
+  },
+  {
+   "i": 351,
+   "db_id": "movie_1",
+   "bucket": "multi_join",
+   "question": "Return reviewer name , movie title , stars , and ratingDate . And sort the data first by reviewer name , then by movie title , and lastly by number of stars ."
+  },
+  {
+   "i": 352,
+   "db_id": "culture_company",
+   "bucket": "having",
+   "question": "List categories that have at least two books after year 1989 ."
+  },
+  {
+   "i": 353,
+   "db_id": "tracking_software_problems",
+   "bucket": "set_op",
+   "question": "Find the products which have problems reported by both Lacey Bosco and Kenton Champlin ?"
+  },
+  {
+   "i": 354,
+   "db_id": "department_store",
+   "bucket": "nested",
+   "question": "What are the average amount purchased and value purchased for the supplier who supplies the most products ."
+  },
+  {
+   "i": 355,
+   "db_id": "soccer_2",
+   "bucket": "nested",
+   "question": "What is the number of states that has some colleges whose enrollment is smaller than the average enrollment ?"
+  },
+  {
+   "i": 356,
+   "db_id": "movie_1",
+   "bucket": "having",
+   "question": "What are the names of the directors who made exactly one movie excluding director NULL ?"
+  },
+  {
+   "i": 357,
+   "db_id": "architecture",
+   "bucket": "having",
+   "question": "What are the ids and names of the architects who built at least 3 bridges ?"
+  },
+  {
+   "i": 358,
+   "db_id": "icfp_1",
+   "bucket": "multi_join",
+   "question": "Which papers have ' Stephanie Weirich ' as an author ?"
+  },
+  {
+   "i": 359,
+   "db_id": "products_gen_characteristics",
+   "bucket": "multi_join",
+   "question": "How many products have the characteristic named ' hot ' ?"
+  },
+  {
+   "i": 360,
+   "db_id": "college_2",
+   "bucket": "having",
+   "question": "Find the name of the students who have more than one advisor ?"
+  },
+  {
+   "i": 361,
+   "db_id": "protein_institute",
+   "bucket": "multi_join",
+   "question": "How many proteins are associated with an institution in a building with at least 20 floors ?"
+  },
+  {
+   "i": 362,
+   "db_id": "bike_1",
+   "bucket": "group_by",
+   "question": "What is the 3 most common cloud cover rates in the region of zip code 94107 ?"
+  },
+  {
+   "i": 363,
+   "db_id": "student_assessment",
+   "bucket": "group_by",
+   "question": "List the id of students who registered some courses and the number of their registered courses ?"
+  },
+  {
+   "i": 364,
+   "db_id": "product_catalog",
+   "bucket": "single_table_analytic",
+   "question": "Find the name of the product that has the smallest capacity ."
+  },
+  {
+   "i": 365,
+   "db_id": "student_1",
+   "bucket": "single_join",
+   "question": "Find all students taught by MARROTTE KIRK . Output first and last names of students ."
+  },
+  {
+   "i": 366,
+   "db_id": "pilot_record",
+   "bucket": "set_op",
+   "question": "Show the pilot positions that have both pilots joining after year 2005 and pilots joining before 2000 ."
+  },
+  {
+   "i": 367,
+   "db_id": "hospital_1",
+   "bucket": "multi_join",
+   "question": "What is the average cost of procedures that physician John Wen was trained in ?"
+  },
+  {
+   "i": 368,
+   "db_id": "hospital_1",
+   "bucket": "single_join",
+   "question": "What is the name of the patient who made the most recent appointment ?"
+  },
+  {
+   "i": 369,
+   "db_id": "music_4",
+   "bucket": "single_join",
+   "question": "What is the average weeks on top of volumes associated with the artist aged 25 or younger ?"
+  },
+  {
+   "i": 370,
+   "db_id": "game_injury",
+   "bucket": "multi_join",
+   "question": "What are the id and name of the stadium where the most injury accidents happened ?"
+  },
+  {
+   "i": 371,
+   "db_id": "decoration_competition",
+   "bucket": "group_by",
+   "question": "Show the most common country across members ."
+  },
+  {
+   "i": 372,
+   "db_id": "scientist_1",
+   "bucket": "nested",
+   "question": "List the name of all projects that are operated longer than the average working hours of all projects ."
+  },
+  {
+   "i": 373,
+   "db_id": "music_2",
+   "bucket": "multi_join",
+   "question": "Find the number of songs in all the studio albums ."
+  },
+  {
+   "i": 374,
+   "db_id": "hr_1",
+   "bucket": "nested",
+   "question": "display the employee name ( first name and last name ) and hire date for all employees in the same department as Clara excluding Clara ."
+  },
+  {
+   "i": 375,
+   "db_id": "department_management",
+   "bucket": "having",
+   "question": "What are the names of the states where at least 3 heads were born ?"
+  },
+  {
+   "i": 376,
+   "db_id": "activity_1",
+   "bucket": "single_join",
+   "question": "Show the ids of students whose advisors are Professor ."
+  },
+  {
+   "i": 377,
+   "db_id": "college_1",
+   "bucket": "set_op",
+   "question": "Find the first name of the professor who is teaching two courses with code CIS-220 and QM-261 ."
+  },
+  {
+   "i": 378,
+   "db_id": "university_basketball",
+   "bucket": "single_table_analytic",
+   "question": "List all schools and their nicknames in the order of founded year ."
+  },
+  {
+   "i": 379,
+   "db_id": "tracking_grants_for_research",
+   "bucket": "multi_join",
+   "question": "Find out the send dates of the documents with the grant amount of more than 5000 were granted by organisation type described"
+  },
+  {
+   "i": 380,
+   "db_id": "wine_1",
+   "bucket": "single_join",
+   "question": "List the names of all distinct wines that are made of Red color grape ."
+  },
+  {
+   "i": 381,
+   "db_id": "dorm_1",
+   "bucket": "multi_join",
+   "question": "Find the number of students who is older than 20 in each dorm ."
+  },
+  {
+   "i": 382,
+   "db_id": "hr_1",
+   "bucket": "multi_join",
+   "question": "display those employees who contain a letter z to their first name and also display their last name , city ."
+  },
+  {
+   "i": 383,
+   "db_id": "game_1",
+   "bucket": "having",
+   "question": "Show all game names played by at least 1000 hours ."
+  },
+  {
+   "i": 384,
+   "db_id": "small_bank_1",
+   "bucket": "group_by",
+   "question": "Find the total saving balance for each account name ."
+  },
+  {
+   "i": 385,
+   "db_id": "performance_attendance",
+   "bucket": "nested",
+   "question": "List the names of members who did not attend any performance ."
+  },
+  {
+   "i": 386,
+   "db_id": "hr_1",
+   "bucket": "group_by",
+   "question": "display job title and average salary of employees ."
+  },
+  {
+   "i": 387,
+   "db_id": "student_1",
+   "bucket": "group_by",
+   "question": "Report the total number of students for each fourth - grade classroom ."
+  },
+  {
+   "i": 388,
+   "db_id": "tracking_grants_for_research",
+   "bucket": "group_by",
+   "question": "Which organisation hired the most number of research staff ? List the organisation id , type and detail ."
+  },
+  {
+   "i": 389,
+   "db_id": "college_1",
+   "bucket": "set_op",
+   "question": "What are the first names of the professors who do not teach a class ."
+  },
+  {
+   "i": 390,
+   "db_id": "dorm_1",
+   "bucket": "nested",
+   "question": "Find the first name of students who are living in the dorm that has most number of amenities ."
+  },
+  {
+   "i": 391,
+   "db_id": "student_assessment",
+   "bucket": "multi_join",
+   "question": "Find distinct cities of address of students ?"
+  },
+  {
+   "i": 392,
+   "db_id": "game_injury",
+   "bucket": "having",
+   "question": "What are the ids , scores , and dates of the games which caused at least two injury accidents ?"
+  },
+  {
+   "i": 393,
+   "db_id": "device",
+   "bucket": "having",
+   "question": "Show names of shops that have more than one kind of device in stock ."
+  },
+  {
+   "i": 394,
+   "db_id": "entertainment_awards",
+   "bucket": "nested",
+   "question": "List the name of artworks that are not nominated ."
+  },
+  {
+   "i": 395,
+   "db_id": "flight_company",
+   "bucket": "nested",
+   "question": "How many airports have n't the pilot ' Thompson ' driven an aircraft ?"
+  },
+  {
+   "i": 396,
+   "db_id": "swimming",
+   "bucket": "having",
+   "question": "Find the name of the swimmer who has at least 2 records ."
+  },
+  {
+   "i": 397,
+   "db_id": "music_1",
+   "bucket": "nested",
+   "question": "What is ids of the songs whose resolution is higher than the resolution of any songs with rating lower than 8 ?"
+  },
+  {
+   "i": 398,
+   "db_id": "customers_and_addresses",
+   "bucket": "multi_join",
+   "question": "What is the name of the customer that has purchased the most items ?"
+  },
+  {
+   "i": 399,
+   "db_id": "baseball_1",
+   "bucket": "group_by",
+   "question": "What is the number of wins the team Boston Red Stockings got in the postseasons each year in history ?"
+  },
+  {
+   "i": 400,
+   "db_id": "local_govt_and_lot",
+   "bucket": "having",
+   "question": "What are the id and details of the customers who have at least 3 events ?"
+  },
+  {
+   "i": 401,
+   "db_id": "activity_1",
+   "bucket": "single_table_analytic",
+   "question": "How many female Professor do we have ?"
+  },
+  {
+   "i": 402,
+   "db_id": "activity_1",
+   "bucket": "multi_join",
+   "question": "Show the names of all the activities Mark Giuliano participates in ."
+  },
+  {
+   "i": 403,
+   "db_id": "shop_membership",
+   "bucket": "single_table_analytic",
+   "question": "Show card number , name , and hometown for all members in a descending order of level ."
+  },
+  {
+   "i": 404,
+   "db_id": "manufacturer",
+   "bucket": "group_by",
+   "question": "Find the number of funiture types produced by each manufacturer as well as the company names ."
+  },
+  {
+   "i": 405,
+   "db_id": "icfp_1",
+   "bucket": "multi_join",
+   "question": "How many papers have ' Atsushi Ohori ' published ?"
+  },
+  {
+   "i": 406,
+   "db_id": "train_station",
+   "bucket": "multi_join",
+   "question": "show the train name and station name for each train ."
+  },
+  {
+   "i": 407,
+   "db_id": "film_rank",
+   "bucket": "nested",
+   "question": "What are the titles and directors of the films were never presented in China ?"
+  },
+  {
+   "i": 408,
+   "db_id": "product_catalog",
+   "bucket": "single_table_analytic",
+   "question": "What is the product with the highest height ? Give me the catalog entry name ."
+  },
+  {
+   "i": 409,
+   "db_id": "sakila_1",
+   "bucket": "single_join",
+   "question": "What is the first name and the last name of the customer who made the earliest rental ?"
+  },
+  {
+   "i": 410,
+   "db_id": "cre_Doc_Tracking_DB",
+   "bucket": "set_op",
+   "question": "Show the ids of the employees who do n't authorize destruction for any document ."
+  },
+  {
+   "i": 411,
+   "db_id": "customers_and_addresses",
+   "bucket": "single_join",
+   "question": "Which contact channel has been used by the customer with name ' Tillman Ernser ' ?"
+  },
+  {
+   "i": 412,
+   "db_id": "insurance_fnol",
+   "bucket": "having",
+   "question": "Find the policy type used by more than 4 customers ."
+  },
+  {
+   "i": 413,
+   "db_id": "machine_repair",
+   "bucket": "set_op",
+   "question": "Show the starting years shared by technicians from team ' CLE ' and ' CWS ' ."
+  },
+  {
+   "i": 414,
+   "db_id": "epinions_1",
+   "bucket": "nested",
+   "question": "Find the names of users who did not leave any review ."
+  },
+  {
+   "i": 415,
+   "db_id": "station_weather",
+   "bucket": "single_join",
+   "question": "Give me the maximum low temperature and average precipitation at the Amersham station ."
+  },
+  {
+   "i": 416,
+   "db_id": "dorm_1",
+   "bucket": "multi_join",
+   "question": "Find the first name of students who are living in the Smith Hall ."
+  },
+  {
+   "i": 417,
+   "db_id": "customers_and_addresses",
+   "bucket": "single_table_analytic",
+   "question": "How many customers are there ?"
+  },
+  {
+   "i": 418,
+   "db_id": "activity_1",
+   "bucket": "single_join",
+   "question": "Show first name and last name for all the students advised by Michael Goodrich ."
+  },
+  {
+   "i": 419,
+   "db_id": "shop_membership",
+   "bucket": "set_op",
+   "question": "Show all cities without a branch having more than 100 memberships ."
+  },
+  {
+   "i": 420,
+   "db_id": "activity_1",
+   "bucket": "set_op",
+   "question": "Show the ids of the faculty who do n't participate in any activity ."
+  },
+  {
+   "i": 421,
+   "db_id": "roller_coaster",
+   "bucket": "set_op",
+   "question": "What are the country names , area and population which has both roller coasters with speed higher"
+  },
+  {
+   "i": 422,
+   "db_id": "swimming",
+   "bucket": "single_join",
+   "question": "Find the name and capacity of the stadium where the event named ' World Junior ' happened ."
+  },
+  {
+   "i": 423,
+   "db_id": "document_management",
+   "bucket": "nested",
+   "question": "Find the description of the most popular role among the users that have logged in ."
+  },
+  {
+   "i": 424,
+   "db_id": "small_bank_1",
+   "bucket": "multi_join",
+   "question": "Find the name and checking balance of the account with the lowest saving balance ."
+  },
+  {
+   "i": 425,
+   "db_id": "dorm_1",
+   "bucket": "multi_join",
+   "question": "Find the name of amenities Smith Hall dorm have ."
+  },
+  {
+   "i": 426,
+   "db_id": "game_1",
+   "bucket": "set_op",
+   "question": "Find the last name and gender of the students who are playing both Call of Destiny and Works of Widenius games ."
+  },
+  {
+   "i": 427,
+   "db_id": "party_people",
+   "bucket": "group_by",
+   "question": "What is the name of member in charge of greatest number of events ?"
+  },
+  {
+   "i": 428,
+   "db_id": "hr_1",
+   "bucket": "group_by",
+   "question": "display the country ID and number of cities for each country ."
+  },
+  {
+   "i": 429,
+   "db_id": "tracking_share_transactions",
+   "bucket": "single_table_analytic",
+   "question": "What is the total share of transactions ?"
+  },
+  {
+   "i": 430,
+   "db_id": "bike_1",
+   "bucket": "having",
+   "question": "Find the ids and names of stations from which at least 200 trips started ."
+  },
+  {
+   "i": 431,
+   "db_id": "music_1",
+   "bucket": "having",
+   "question": "Find the names and number of works of all artists who have at least one english songs ."
+  },
+  {
+   "i": 432,
+   "db_id": "club_1",
+   "bucket": "single_join",
+   "question": "How many different roles are there in the club ' Bootup Baltimore ' ?"
+  },
+  {
+   "i": 433,
+   "db_id": "entrepreneur",
+   "bucket": "nested",
+   "question": "List the names of people that are not entrepreneurs ."
+  },
+  {
+   "i": 434,
+   "db_id": "phone_market",
+   "bucket": "nested",
+   "question": "List the names of phones that are not on any market ."
+  },
+  {
+   "i": 435,
+   "db_id": "cinema",
+   "bucket": "nested",
+   "question": "What are the title and director of the films without any schedule ?"
+  },
+  {
+   "i": 436,
+   "db_id": "bike_1",
+   "bucket": "single_join",
+   "question": "What is the average latitude and longitude of the starting points of all trips ?"
+  },
+  {
+   "i": 437,
+   "db_id": "college_1",
+   "bucket": "single_join",
+   "question": "How many professors who are from either Accounting or Biology department ?"
+  },
+  {
+   "i": 438,
+   "db_id": "storm_record",
+   "bucket": "set_op",
+   "question": "Show all storm names except for those with at least two affected regions ."
+  },
+  {
+   "i": 439,
+   "db_id": "dorm_1",
+   "bucket": "set_op",
+   "question": "Find the name of dorms which have TV Lounge but no Study Room as amenity ."
+  },
+  {
+   "i": 440,
+   "db_id": "wine_1",
+   "bucket": "nested",
+   "question": "Find the distinct names of all wines that have prices higher than some wines from John Anthony winery ."
+  },
+  {
+   "i": 441,
+   "db_id": "college_2",
+   "bucket": "nested",
+   "question": "Find the names of instructors who did n't each any courses in any Spring semester ."
+  },
+  {
+   "i": 442,
+   "db_id": "local_govt_mdm",
+   "bucket": "single_join",
+   "question": "What are the register ids of electoral registries that have the cross reference source system code ' Electoral ' or ' Tax ' ?"
+  },
+  {
+   "i": 443,
+   "db_id": "apartment_rentals",
+   "bucket": "single_join",
+   "question": "Show the guest first names , start dates , and end dates of all the apartment bookings ."
+  },
+  {
+   "i": 444,
+   "db_id": "ship_1",
+   "bucket": "nested",
+   "question": "Find the name and flag of ships that are not steered by any captain with Midshipman rank ."
+  },
+  {
+   "i": 445,
+   "db_id": "cre_Doc_Tracking_DB",
+   "bucket": "multi_join",
+   "question": "Show the location name for document ' Robin CV ' ."
+  },
+  {
+   "i": 446,
+   "db_id": "college_2",
+   "bucket": "set_op",
+   "question": "Find courses that ran in Fall 2009 or in Spring 2010 ."
+  },
+  {
+   "i": 447,
+   "db_id": "ship_mission",
+   "bucket": "single_table_analytic",
+   "question": "What is the name of the ship with the largest tonnage ?"
+  },
+  {
+   "i": 448,
+   "db_id": "products_gen_characteristics",
+   "bucket": "multi_join",
+   "question": "Find the product names that are colored ' white ' but do not have unit of measurement ' Handful ' ."
+  },
+  {
+   "i": 449,
+   "db_id": "ship_1",
+   "bucket": "group_by",
+   "question": "In which year were most of ships built ?"
+  },
+  {
+   "i": 450,
+   "db_id": "icfp_1",
+   "bucket": "multi_join",
+   "question": "What are the titles of papers published by ' Jeremy Gibbons ' ?"
+  },
+  {
+   "i": 451,
+   "db_id": "gas_company",
+   "bucket": "single_table_analytic",
+   "question": "Show minimum , maximum , and average market value for all companies ."
+  },
+  {
+   "i": 452,
+   "db_id": "tracking_share_transactions",
+   "bucket": "single_join",
+   "question": "What are the purchase details of transactions with amount bigger than 10000 ?"
+  },
+  {
+   "i": 453,
+   "db_id": "product_catalog",
+   "bucket": "having",
+   "question": "Find the list of attribute data types possessed by more than 3 attribute definitions ."
+  },
+  {
+   "i": 454,
+   "db_id": "wedding",
+   "bucket": "set_op",
+   "question": "Show all church names except for those that had a wedding in year 2015 ."
+  },
+  {
+   "i": 455,
+   "db_id": "architecture",
+   "bucket": "nested",
+   "question": "How many architects have n't built a mill before year 1850 ?"
+  },
+  {
+   "i": 456,
+   "db_id": "student_1",
+   "bucket": "single_join",
+   "question": "Find the last names of the teachers that teach fifth grade ."
+  },
+  {
+   "i": 457,
+   "db_id": "college_2",
+   "bucket": "nested",
+   "question": "What is the title and credits of the course that is taught in the largest classroom ( with the highest capacity ) ?"
+  },
+  {
+   "i": 458,
+   "db_id": "flight_company",
+   "bucket": "having",
+   "question": "What are the ids and names of the companies that operated more than one flight ?"
+  },
+  {
+   "i": 459,
+   "db_id": "customers_and_products_contacts",
+   "bucket": "group_by",
+   "question": "Show each state and the number of addresses in each state ."
+  },
+  {
+   "i": 460,
+   "db_id": "document_management",
+   "bucket": "set_op",
+   "question": "Find names of the document without any images ."
+  },
+  {
+   "i": 461,
+   "db_id": "tracking_grants_for_research",
+   "bucket": "multi_join",
+   "question": "What are the response received dates for the documents described as ' Regular ' or granted with more than 100 ?"
+  },
+  {
+   "i": 462,
+   "db_id": "ship_mission",
+   "bucket": "having",
+   "question": "List the nations that have more than two ships ."
+  },
+  {
+   "i": 463,
+   "db_id": "customers_and_products_contacts",
+   "bucket": "having",
+   "question": "Show the product type codes which have at least two products ."
+  },
+  {
+   "i": 464,
+   "db_id": "loan_1",
+   "bucket": "nested",
+   "question": "Find the name of customers whose credit score is below the average credit scores of all customers ."
+  },
+  {
+   "i": 465,
+   "db_id": "game_1",
+   "bucket": "group_by",
+   "question": "What is the first name and last name of the student who have most number of sports ?"
+  },
+  {
+   "i": 466,
+   "db_id": "railway",
+   "bucket": "single_table_analytic",
+   "question": "How many railways are there ?"
+  },
+  {
+   "i": 467,
+   "db_id": "store_product",
+   "bucket": "nested",
+   "question": "Find the name of the products that are not using the most frequently - used max page size ."
+  },
+  {
+   "i": 468,
+   "db_id": "tracking_orders",
+   "bucket": "having",
+   "question": "List the names of the customers who have once bought product ' food ' ."
+  },
+  {
+   "i": 469,
+   "db_id": "movie_1",
+   "bucket": "single_join",
+   "question": "Find the names of reviewers who had given higher than 3 star ratings ."
+  },
+  {
+   "i": 470,
+   "db_id": "election_representative",
+   "bucket": "single_join",
+   "question": "What are the names of representatives with more than 10000 votes in election ?"
+  },
+  {
+   "i": 471,
+   "db_id": "wine_1",
+   "bucket": "nested",
+   "question": "What are the names of wines that are more expensive then all wines made in the year 2006 ?"
+  },
+  {
+   "i": 472,
+   "db_id": "college_2",
+   "bucket": "set_op",
+   "question": "Find the id of instructors who did n't teach any courses ?"
+  },
+  {
+   "i": 473,
+   "db_id": "hospital_1",
+   "bucket": "multi_join",
+   "question": "Find the names of all patients who have an undergoing treatment and are staying in room 111 ."
+  },
+  {
+   "i": 474,
+   "db_id": "activity_1",
+   "bucket": "group_by",
+   "question": "Show all the ranks and the number of male and female faculty for each rank ."
+  },
+  {
+   "i": 475,
+   "db_id": "music_1",
+   "bucket": "group_by",
+   "question": "What is the most popular file format ?"
+  },
+  {
+   "i": 476,
+   "db_id": "ship_1",
+   "bucket": "single_join",
+   "question": "Find the name of the ship that is steered by the youngest captain ."
+  },
+  {
+   "i": 477,
+   "db_id": "tracking_share_transactions",
+   "bucket": "having",
+   "question": "Show the ids of the investors who have at least two transactions ."
+  },
+  {
+   "i": 478,
+   "db_id": "school_finance",
+   "bucket": "group_by",
+   "question": "Show each county along with the number of schools and total enrollment in each county ."
+  },
+  {
+   "i": 479,
+   "db_id": "behavior_monitoring",
+   "bucket": "single_join",
+   "question": "What are the id and zip code of the address with the highest monthly rental ?"
+  },
+  {
+   "i": 480,
+   "db_id": "flight_4",
+   "bucket": "nested",
+   "question": "Find the number of routes from the United States to Canada ."
+  },
+  {
+   "i": 481,
+   "db_id": "music_1",
+   "bucket": "set_op",
+   "question": "Find the names of the artists who have produced english songs but have never received rating higher than 8 ."
+  },
+  {
+   "i": 482,
+   "db_id": "farm",
+   "bucket": "single_table_analytic",
+   "question": "What is the average number of working horses of farms with more than 5000 total number of horses ?"
+  },
+  {
+   "i": 483,
+   "db_id": "baseball_1",
+   "bucket": "single_join",
+   "question": "What is the total home game attendance of team Boston Red Stockings from 2000 to 2010 ?"
+  },
+  {
+   "i": 484,
+   "db_id": "election_representative",
+   "bucket": "nested",
+   "question": "List the names of representatives that have not participated in elections listed here ."
+  },
+  {
+   "i": 485,
+   "db_id": "journal_committee",
+   "bucket": "multi_join",
+   "question": "Show the names and ages of editors and the theme of journals for which they serve on committees , in ascending alphabetical order of theme ."
+  },
+  {
+   "i": 486,
+   "db_id": "formula_1",
+   "bucket": "having",
+   "question": "Find the id , forename and number of races of all drivers who have at least participated in two races ?"
+  },
+  {
+   "i": 487,
+   "db_id": "products_gen_characteristics",
+   "bucket": "multi_join",
+   "question": "List all characteristics of product named ' sesame ' with type code ' Grade ' ."
+  },
+  {
+   "i": 488,
+   "db_id": "aircraft",
+   "bucket": "nested",
+   "question": "List the names of aircrafts and that did not win any match ."
+  },
+  {
+   "i": 489,
+   "db_id": "formula_1",
+   "bucket": "single_join",
+   "question": "Find all the forenames of distinct drivers who won in position 1 as driver standing and had more than 20 points ?"
+  },
+  {
+   "i": 490,
+   "db_id": "wine_1",
+   "bucket": "having",
+   "question": "Find the country of all appelations who have at most three wines ."
+  },
+  {
+   "i": 491,
+   "db_id": "game_injury",
+   "bucket": "multi_join",
+   "question": "In which season and which stadium did any player have an injury of ' Foot injury ' or ' Knee problem ' ?"
+  },
+  {
+   "i": 492,
+   "db_id": "hr_1",
+   "bucket": "nested",
+   "question": "display the employee id and salary of all employees who report to Payam ( first name ) ."
+  },
+  {
+   "i": 493,
+   "db_id": "film_rank",
+   "bucket": "having",
+   "question": "List the names of studios that have at least two films ."
+  },
+  {
+   "i": 494,
+   "db_id": "products_for_hire",
+   "bucket": "having",
+   "question": "What is the id of the product that is booked for 3 times ?"
+  },
+  {
+   "i": 495,
+   "db_id": "small_bank_1",
+   "bucket": "multi_join",
+   "question": "Find the name , checking balance and savings balance of all accounts in the bank sorted by their total checking and savings balance in descending order ."
+  },
+  {
+   "i": 496,
+   "db_id": "machine_repair",
+   "bucket": "multi_join",
+   "question": "Show names of technicians and series of machines they are assigned to repair ."
+  },
+  {
+   "i": 497,
+   "db_id": "manufactory_1",
+   "bucket": "nested",
+   "question": "Find number of products which Sony does not make ."
+  },
+  {
+   "i": 498,
+   "db_id": "candidate_poll",
+   "bucket": "nested",
+   "question": "find the name of people whose height is lower than the average ."
+  },
+  {
+   "i": 499,
+   "db_id": "college_2",
+   "bucket": "nested",
+   "question": "Find the names of students who have taken any course in the Fall semester of year 2003 ."
+  }
+ ]
+}

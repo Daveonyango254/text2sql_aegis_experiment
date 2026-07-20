@@ -1,0 +1,54 @@
+{
+ "counts": {
+  "merged": 1000,
+  "train": 798,
+  "validation": 101,
+  "test": 101
+ },
+ "by_source": {
+  "spider": 500,
+  "bird": 500
+ },
+ "by_bucket": {
+  "having": 74,
+  "single_join": 281,
+  "nested": 126,
+  "group_by": 106,
+  "single_table_analytic": 110,
+  "simple": 43,
+  "multi_join": 209,
+  "set_op": 51
+ },
+ "train_by_bucket": {
+  "having": 58,
+  "single_join": 225,
+  "nested": 100,
+  "group_by": 84,
+  "single_table_analytic": 88,
+  "simple": 35,
+  "multi_join": 167,
+  "set_op": 41
+ },
+ "val_by_bucket": {
+  "single_table_analytic": 11,
+  "single_join": 28,
+  "group_by": 11,
+  "set_op": 5,
+  "nested": 13,
+  "multi_join": 21,
+  "having": 8,
+  "simple": 4
+ },
+ "test_by_bucket": {
+  "multi_join": 21,
+  "single_table_analytic": 11,
+  "single_join": 28,
+  "group_by": 11,
+  "nested": 13,
+  "set_op": 5,
+  "having": 8,
+  "simple": 4
+ },
+ "distinct_dbs": 198,
+ "seed": 42
+}
