@@ -68,6 +68,15 @@ SHARED_PARAMS = dict(
 
 def build(name, cfg):
     nb = nbf.v4.new_notebook()
+    # Pin a kernelspec so papermill can launch the notebook non-interactively
+    # without needing an explicit `-k`/`--kernel` override; without this,
+    # papermill raises "No kernel name found in notebook and no override provided."
+    nb.metadata["kernelspec"] = {
+        "display_name": "Python 3",
+        "language": "python",
+        "name": "python3",
+    }
+    nb.metadata["language_info"] = {"name": "python", "version": "3"}
     C, M = [], nb.cells
     def md(s):   M.append(nbf.v4.new_markdown_cell(s))
     def code(s, tags=None):
