@@ -52,6 +52,10 @@ tmux new -s text2sql
 # 3. Train (Qwen first — the reference run), non-interactively via papermill:
 papermill notebooks/qwen_aegis.ipynb outputs/qwen_aegis_output.ipynb -f configs/qwen.yaml
 
+# then the other two models (same pattern, one config each):
+papermill notebooks/llama31_aegis.ipynb outputs/llama31_aegis_output.ipynb -f configs/llama31.yaml
+papermill notebooks/phi4_aegis.ipynb    outputs/phi4_aegis_output.ipynb    -f configs/phi4.yaml
+
 # detach: Ctrl-b d   ·   reattach later: tmux attach -t text2sql
 # monitor in a second pane/window:  watch -n 1 nvidia-smi
 ```
